@@ -1,38 +1,104 @@
-.App {
-  text-align: center;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    align-items: center;
+    height: 90px;
+    padding: 12px;
+    background:lightblue;
+    justify-content: space-between;
+
+}
+li{
+    list-style: none;
+    margin: 0px 7px;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+ul{
+    display: flex;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.logo{
+    display: flex;
+    align-items: center;
+    margin-left: 25px;
+    
+}
+.logo img{
+    margin-right: 14px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.logo span{
+    font-size: 1.3rem;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+}
+h1{
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 12px;
+    font-family: 'Poppins', sans-serif;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.edit{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 12px;
+    
 }
 
-.App-link {
-  color: #61dafb;
+.input{
+    padding: 8px;
+    width: 350px;
+    margin: 12px;
+}
+.btn{
+    padding: 6px ;
+    background-color: lightblue;
+    border-radius: 4px;
+    margin: 12px;
+    cursor: pointer;
+ border: 0.1px solide balck;
+ width: 350px;
+}
+.btn:hover{
+    background-color: lightcyan;
+    transform: scale(1.056);
+}
+.img{
+ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    position: relative;
+}
+.img img{
+    border-radius: 4px;
+    
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.img .top{
+    position: absolute;
+    top: 12px;
+    width: 400px;
+    color: rgb(31, 29, 29);
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+
+}
+.img .bottom{
+    position: absolute;
+    bottom: 12px;
+    color: rgb(119, 33, 33);
+    font-family: 'Poppins', sans-serif;
+    width: 400px;
+    text-align: center;
 }
